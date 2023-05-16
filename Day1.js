@@ -122,11 +122,11 @@ console.log("The sum of all odd elements in an array",oddSum(arr));
 // // 9. find the number of even elements in an array
 
 const findEven = function(arr){
-    let evenNum=[];
+    let c=0;
     for(let i=0;i<arr.length;i++){
-        if(arr[i]%2==0) evenNum.push(arr[i]);
+        if(arr[i]%2==0) c++;
     }
-    return evenNum.length
+    return c
 
 }
 console.log("The number of even elements in an array",findEven(arr));
@@ -134,11 +134,11 @@ console.log("The number of even elements in an array",findEven(arr));
 // // 10. find the number of odd elements in an array
 
 const findOdd = function(arr){
-    let oddNum=[];
+    let c=0;
     for(let i=0;i<arr.length;i++){
-        if(arr[i]%2!=0) oddNum.push(arr[i]);
+        if(arr[i]%2!=0) c++;
     }
-    return oddNum.length
+    return c
 
 }
 console.log("The number of even elements in an array",findOdd(arr));
